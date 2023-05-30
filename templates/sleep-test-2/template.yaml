@@ -1,0 +1,25 @@
+---
+apiVersion: scaffolder.backstage.io/v1beta3
+kind: Template
+metadata:
+  name: sleep-dummy-2
+  title: Sleep template 2
+  description: A template with only one sleep example action that will ask for a user input for the amount of seconds it should sleep
+spec:
+  owner: roadie
+  type: service
+
+  parameters:
+    - title: Sleep
+      properties:
+        amount:
+          title: Amount to sleep
+          type: number
+          description: Will sleep for this amount of seconds
+
+  steps:
+    - id: sleep
+      name: sleep
+      action: roadiehq:utils:sleep
+      input:
+        amount: ${{ parameters.amount }}
