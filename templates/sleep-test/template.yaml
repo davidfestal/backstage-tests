@@ -13,7 +13,7 @@ spec:
     - title: Sleep
       properties:
         amount:
-          title: Amount to sleep deeply
+          title: Amount to sleep
           type: number
           description: Will sleep for this amount of seconds
 
