@@ -3,7 +3,7 @@ apiVersion: scaffolder.backstage.io/v1beta3
 kind: Template
 metadata:
   name: sleep-dummy
-  title: Sleep template changed
+  title: Sleep template
   description: A template with only one sleep example action that will ask for a user input for the amount of seconds it should sleep
 spec:
   owner: roadie
