@@ -2,11 +2,13 @@ apiVersion: backstage.io/v1alpha1
 kind: Component
 metadata:
   name: dice-roller
-  description: It rolls dice
+  description: It rolls dice  
   tags:
     - go
   annotations:
     'backstage.io/kubernetes-id': dice-roller
+    humanitec.com/orgId: rh-developer-hub
+    humanitec.com/appId: backstage-tests
 spec:
   type: service
   lifecycle: production
