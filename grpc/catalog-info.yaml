@@ -1,0 +1,11 @@
+apiVersion: backstage.io/v1alpha1
+kind: API
+metadata:
+  name: hello-world
+  description: Hello World example for gRPC
+spec:
+  type: grpc-docs
+  lifecycle: deprecated
+  owner: davidfestal
+  definition:
+    $text: https://github.com/gendocu-com/grpc-docs/blob/master/example/src/example-definition.json
